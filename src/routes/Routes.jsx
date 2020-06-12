@@ -1,50 +1,27 @@
 import React, { Component } from "react";
 import { Router, Redirect, globalHistory } from "@reach/router";
-import PrivateRoutes from "./PrivateRoutes.jsx";
-import firebase, { providers, firestore } from "../firebase";
+import Shop from "../Components/Shop/Shop.jsx";
+import About from "../Components/About/About";
+import Blog from "../Components/Blog/Blog";
+import FAQ from "../Components/FAQ/FAQ";
+import Home from "../Components/Home/Home";
+import styles from "./Routes.module.scss";
 
 
 
 const NotFound = () => (<h2>Not Found</h2>);
 
 export default class Routes extends Component {
-    state = {
-        user: null
-    }
-
-    signIn = () => {
-        firebase
-            .auth()
-            .signInWithPopup(providers.google)
-            .then(result => {
-                this.setState({user: result.user});
-                console.log(this.state.user)
-                globalHistory.navigate("/private/mycabinet");
-            })
-            .catch(error => {
-                console.log(error);
-            })
-    }
-
-    signOut = () => {
-        firebase
-            .auth()
-            .signOut()
-            .then(() => {
-                this.setState({user: null});
-                globalHistory.navigate("/google-books-react");
-            })
-    }
 
     render() {
         return (
-            <Router>
+            <Router className={styles.wrapper}>
                 <Redirect noThrow from="/" to="home" />
-                <Booklist path="home" bookData={this.props.bookData} user={this.state.user}/>
-                <Login path="login" signIn={this.signIn} />
-                <PrivateRoutes path="private" user={this.state.user}> 
-                    <MyCab path="mycabinet" user={this.state.user}  signOut={this.signOut} />
-                </PrivateRoutes> 
+                <Home path="home" />
+                <Shop path="shop" name="shop" />
+                <Blog path="blog" name=""blog />
+                <About path="about" name="about" />
+                <FAQ path="faq" name="faq" />
                 <NotFound default />
             </Router>
         );

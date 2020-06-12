@@ -6,9 +6,7 @@ export default class NavItem extends Component {
     render() {
         return (
             <>
-            {/* <p className="navItem"> */}
                 <Link to={this.props.route}>{this.props.name}</Link>
-            {/* </p> */}
             </>
         );
     }

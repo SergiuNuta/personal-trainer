@@ -9,13 +9,11 @@ class Header extends Component {
                 <h1><a href="/home">Victoria Fit</a></h1>
                 <nav>
                     <ul className={styles.navList}>
-                        <NavItem  route="/home" name="Home" />
-                        <NavItem route="shop" name="shop" />
-                        <NavItem route="blog" name="blog" />
-                        <NavItem route="about" name="about" />
+                        <NavItem route="shop" name="Shop" />
+                        <NavItem route="blog" name="Blog" />
+                        <NavItem route="about" name="About" />
                         <NavItem route="faq" name="FAQ" />
-                        {/* <NavItem  route="/private/mycabinet" name="Cabinet" /> */}
-                        {/* <NavItem  route="/login" name="Login" /> */}
+                        <NavItem route="cart" name="My Cart" />
                     </ul>
                 </nav>
             </header>
