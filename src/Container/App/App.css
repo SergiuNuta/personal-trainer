@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.app {
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+}
+
+.app-header {
+    border: 1px solid red;
+    width: 100%;
+    height: 20vh;
+    color: white;
+}

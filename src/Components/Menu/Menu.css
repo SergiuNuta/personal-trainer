@@ -1,0 +1,9 @@
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+}
+
+ul {
+    margin: 0 10px;
+}
