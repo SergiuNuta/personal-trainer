@@ -1,14 +1,14 @@
 import React from 'react';
 import './App.css';
-import Menu from '../../Components/Menu/Menu';
+import Header from '../../Components/Header/Header';
 
 
 function App() {
   return (
     <div className="app">
-      <header className="app-header">
-      <Menu />
-      </header>
+      {/* <header className="app-header"> */}
+      <Header />
+      {/* </header> */}
     </div>
   );
 }
