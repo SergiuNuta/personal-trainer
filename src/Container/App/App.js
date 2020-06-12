@@ -6,6 +6,7 @@ import Home from '../../Components/Home/Home';
 import Shop from '../../Components/Shop/Shop';
 import About from '../../Components/About/About';
 import FAQ from '../../Components/FAQ/FAQ';
+import Blog from '../../Components/Blog/Blog';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       {/* <Routes /> */}
       <Home />
       <Shop />
+      <Blog />
       <About />
       <FAQ />
     </div>

@@ -14,11 +14,12 @@
 
     .secondDiv {
         width: 50%;
-        text-align: center;
+        text-align: left;
         color: chartreuse;
 
-        h2 {
-            top: 50%;
+        h1 {
+            padding-left: 20%;
+            top: 40%;
             position: relative;
         }
     }

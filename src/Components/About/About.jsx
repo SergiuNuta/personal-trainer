@@ -6,7 +6,8 @@ export default class About extends Component {
         return (
             <>
                 <div className={styles.wrapper}>
-                    About
+                <div className={styles.firstContainer}></div>
+                <div className={styles.secondContainer}>About</div>
             </div>
 
             </>

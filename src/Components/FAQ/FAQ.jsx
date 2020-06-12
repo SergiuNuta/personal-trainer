@@ -7,7 +7,8 @@ export default class FAQ extends Component {
             <>
             <a name="FAQ" />
             <div className={styles.wrapper}>
-                FAQ
+            <div className={styles.firstContainer}></div>
+            <div className={styles.secondContainer}>FAQ</div>
             </div>
             </>
         )

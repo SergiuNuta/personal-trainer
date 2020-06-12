@@ -8,7 +8,8 @@ export default class Home extends Component {
             <div className={styles.wrapper}>
             <div className={styles.firstDiv}></div>
             <div className={styles.secondDiv}>
-                <h2>Buy my products!</h2>
+                <h1>Get</h1>
+                <h1>Victoria Fit Program.</h1>
             </div>
             </div>
             </>

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Router, Redirect, globalHistory } from "@reach/router";
+import { Router, Redirect } from "@reach/router";
 import Shop from "../Components/Shop/Shop.jsx";
 import About from "../Components/About/About";
 import Blog from "../Components/Blog/Blog";
@@ -19,7 +19,7 @@ export default class Routes extends Component {
                 <Redirect noThrow from="/" to="home" />
                 <Home path="home" />
                 <Shop path="shop" name="shop" />
-                <Blog path="blog" name=""blog />
+                <Blog path="blog" name="blog" />
                 <About path="about" name="about" />
                 <FAQ path="faq" name="faq" />
                 <NotFound default />

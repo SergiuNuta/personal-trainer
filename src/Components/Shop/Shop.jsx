@@ -7,7 +7,8 @@ export default class Shop extends Component {
             <>
             <a name="Shop" />
             <div className={styles.wrapper}>
-                Shop
+            <div className={styles.firstContainer}></div>
+            <div className={styles.secondContainer}>Shop</div>
             </div>
             </>
         )

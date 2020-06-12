@@ -5,9 +5,10 @@ export default class Blog extends Component {
     render() {
         return (
             <>
-                <a name="Blog" />
+                <a name="blog" />
                 <div className={styles.wrapper}>
-                    Blog
+                <div className={styles.firstContainer}></div>
+                <div className={styles.secondContainer}>Blog</div>
             </div>
             </>
         )
