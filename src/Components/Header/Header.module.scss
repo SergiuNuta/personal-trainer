@@ -5,11 +5,29 @@
     display: flex;
     justify-content: space-between;
 
+    .Nav {
+        height: 75px;
+        width: 100%;
+        position: fixed;
+        overflow: hidden;
+        transition: 0.7s;
+
+        &.floating {
+            background-color: white;
+            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+
+            a {
+                color: black;
+            }
+        }
+    }
+
     h1 {
         position: relative;
         padding: 10px;
         top: 0;
         left: 44%;
+        z-index: 15;
 
         a {
             text-decoration: none;
@@ -26,9 +44,14 @@
         justify-content: flex-end;
 
         a {
+            cursor: pointer;
             color: white;
             margin: 0 10px;
             text-decoration: none;
+
+            & :active {
+                border: 1px solid blak;
+            }
         }
     }
 }

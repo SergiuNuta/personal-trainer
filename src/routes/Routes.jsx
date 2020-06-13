@@ -15,15 +15,18 @@ export default class Routes extends Component {
 
     render() {
         return (
+            <>
             <Router className={styles.wrapper}>
-                <Redirect noThrow from="/" to="home" />
-                <Home path="home" />
-                <Shop path="shop" name="shop" />
-                <Blog path="blog" name="blog" />
-                <About path="about" name="about" />
-                <FAQ path="faq" name="faq" />
-                <NotFound default />
+                {/* <Redirect noThrow from="/" to="home" /> */}
+                {/* <NotFound default /> */}
             </Router>
+            <Redirect noThrow from="/" to="home" />
+            <Home path="home" />
+            <Shop path="shop" name="shop" />
+            <Blog path="blog" name="blog" />
+            <About path="about" name="about" />
+            <FAQ path="faq" name="faq" />
+            </>
         );
     }
 }
