@@ -6,6 +6,7 @@ import Blog from "../Components/Blog/Blog";
 import FAQ from "../Components/FAQ/FAQ";
 import Home from "../Components/Home/Home";
 import styles from "./Routes.module.scss";
+import Footer from "../Components/Footer/Footer.jsx";
 
 
 
@@ -23,9 +24,10 @@ export default class Routes extends Component {
             <Redirect noThrow from="/" to="home" />
             <Home path="home" />
             <Shop path="shop" name="shop" />
-            <Blog path="blog" name="blog" />
+            {/* <Blog path="blog" name="blog" /> */}
             <About path="about" name="about" />
             <FAQ path="faq" name="faq" />
+            <Footer />
             </>
         );
     }
