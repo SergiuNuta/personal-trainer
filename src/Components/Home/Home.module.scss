@@ -7,20 +7,40 @@
 
     .firstDiv {
         width: 50%;
-        background-image: url(../../data/images/javier.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
+    }
+
+    .carousel {
+        img {
+            width: 100%;
+            height: 100vh;
+            display: block;
+            object-fit: cover;
+        }
     }
 
     .secondDiv {
         width: 50%;
         text-align: left;
-        color: chartreuse;
 
         h1 {
             padding-left: 20%;
-            top: 40%;
+            top: 35%;
             position: relative;
+            color: chartreuse;
+        }
+
+        p {
+            position: relative;
+            padding-left: 20%;
+            padding-right: 10%;
+            top: 38%;
+        }
+
+        .button {
+            position: relative;
+            top: 45%;
+            padding: 7px;
+            margin-left: 20%;
         }
     }
 }

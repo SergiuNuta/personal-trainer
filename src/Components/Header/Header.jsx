@@ -3,7 +3,7 @@ import NavItem from "./NavItem/NavItem";
 import styles from "./Header.module.scss";
 import { Link } from "@reach/router";
 
-class Header extends Component {
+export default class Header extends Component {
     componentDidMount() {
         window.addEventListener("scroll", this.handleScroll);
     }
@@ -22,6 +22,7 @@ class Header extends Component {
                     <Link to="/home">Victoria Fit</Link>
                 </h1>
                 <nav className={styles.Nav}>
+                    {/* <img src="../../data/images/dwayne.jpg" alt="" /> */}
                     <ul className={styles.navList}>
                         <NavItem route="shop" name="Shop" />
                         {/* <NavItem route="blog" name="Blog" /> */}
@@ -34,5 +35,3 @@ class Header extends Component {
         )
     }
 }
-
-export default Header;
