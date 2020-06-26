@@ -11,7 +11,7 @@ export default function Shop({ stripeToken }) {
     return (
         <>
             <a name="shop" />
-            <div className={styles.wrapper}>
+            <div className={styles.shopWrapper}>
                 <div className={styles.firstContainer}>
                 <Card className={styles.card}>
                         <Card.Img className={styles.Img} variant="top" src={img} />

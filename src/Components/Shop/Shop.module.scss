@@ -1,33 +1,35 @@
-.wrapper {
-    // position: relative;
-    // top: 5em;
+.shopWrapper {
     width: 100%;
     height: 100vh;
     display: flex;
     flex-wrap: wrap;
 
     .firstContainer {
-        width: 50%;
+        width: 100%;
+        height: 100%;
         background-color: #DB997B;
     }
 
-    .card {
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        width: 60%;
-        height: 600px; 
-        margin: 20px auto;
-        border: none;
-    }
-
-    .Img {
-        object-fit: cover;
-        width: 100%;
-        height: 400px;
-        display: block;
-    }
+    
 
     .secondContainer {
-        width: 50%;
+        width: 100%;
+        height: 100%;
         background-color: honeydew;
     }
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 60%;
+    height: 600px; 
+    margin: 20px auto;
+    border: none;
+}
+
+.Img {
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+    display: block;
 }
