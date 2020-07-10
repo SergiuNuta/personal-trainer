@@ -7,8 +7,7 @@ export default class About extends Component {
             <>
                 <a name="about" />
                 <div className={styles.wrapper}>
-                    <div className={styles.firstContainer}></div>
-                    <div className={styles.secondContainer}>About</div>
+                    About
                 </div>
 
             </>

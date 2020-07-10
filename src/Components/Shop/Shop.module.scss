@@ -3,33 +3,26 @@
     height: 100vh;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 
-    .firstContainer {
-        width: 100%;
-        height: 100%;
-        background-color: #DB997B;
-    }
-
-    
-
-    .secondContainer {
-        width: 100%;
-        height: 100%;
-        background-color: honeydew;
+    div {
+        width: 500px;
+        border: 1px solid black;
+        margin: 10px;
     }
 }
 
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    width: 60%;
-    height: 600px; 
-    margin: 20px auto;
-    border: none;
-}
+// .card {
+//     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+//     width: 60%;
+//     height: 600px; 
+//     margin: 20px auto;
+//     border: none;
+// }
 
-.Img {
-    object-fit: cover;
-    width: 100%;
-    height: 400px;
-    display: block;
-}
+// .Img {
+//     object-fit: cover;
+//     width: 100%;
+//     height: 400px;
+//     display: block;
+// }

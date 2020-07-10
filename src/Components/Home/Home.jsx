@@ -51,7 +51,7 @@ export default class Home extends Component {
                     <div className={styles.secondDiv}>
                         <h1>Get</h1>
                         <h1>Victoria Fit Program.</h1>
-                        <p>Step by step video workouts for home and gym to get fitter and stronger. Delicious, nutritionist-crafted meal plans. Build strength and tone with Tammy, no matter what your goal is.</p>
+                        <p>Step by step video workouts for home and gym to get fitter and stronger. </p>
                         <Button className={styles.button}>Click here</Button>
                     </div>
                 </div>
