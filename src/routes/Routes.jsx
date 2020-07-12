@@ -14,14 +14,10 @@ export default class Routes extends Component {
     render() {
         return (
             <>
-            {/* <Router className={styles.wrapper}>
-                <Redirect noThrow from="/" to="home" />
-                <NotFound default />
-            </Router> */}
             <Redirect noThrow from="/" to="home" />
             <Home path="home" />
             <Shop path="shop" name="shop" />
-            <About path="about" name="about" />
+            {/* <About path="about" name="about" /> */}
             <Footer />
             </>
         );

@@ -12,8 +12,8 @@ export default function Shop({ stripeToken }) {
         <>
             <a name="shop" />
             <div className={styles.shopWrapper}>
-                <div>first program</div>
-                <div>second program</div>
+                <div className={styles.firstDiv}>first program</div>
+                <div className={styles.secondDiv}>second program</div>
 
             </div>
         </>

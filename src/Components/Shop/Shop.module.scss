@@ -1,14 +1,26 @@
 .shopWrapper {
     width: 100%;
-    height: 100vh;
+    // height: 100vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 
     div {
         width: 500px;
+        height: 450px;
         border: 1px solid black;
         margin: 10px;
+    }
+
+    .firstDiv {
+        display: flex;
+        flex-direction: column;
+        background-color: #F35264;
+        // height: 400px;
+    }
+
+    .secondDiv {
+        background-color: #E4E5E7;
     }
 }
 

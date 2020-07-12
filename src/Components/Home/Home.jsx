@@ -15,11 +15,11 @@ export default class Home extends Component {
                                 <img
                                     className="d-block w-100"
                                     src={img}
-                                    // alt="First slide"
+                                    // alt="Gym guide"
                                     fluid
                                 />
-                                <Carousel.Caption>
-                                    {/* <h3>First slide label</h3> */}
+                                <Carousel.Caption className={styles.transition}>
+                                    <h3>Gym guide</h3>
                                 </Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item>
@@ -31,7 +31,7 @@ export default class Home extends Component {
                                 />
 
                                 <Carousel.Caption>
-                                    {/* <h3>Second slide label</h3> */}
+                                    <h3>Home guide</h3>
                                 </Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item>
@@ -48,12 +48,17 @@ export default class Home extends Component {
                             </Carousel.Item>
                         </Carousel>
                     </div>
-                    <div className={styles.secondDiv}>
+                    <div className={styles.testDiv}>
+                        <div>Build muscle</div>
+                        <div>Loose weight</div>
+                        <div>Live well</div>
+                    </div>
+                    {/* <div className={styles.secondDiv}>
                         <h1>Get</h1>
                         <h1>Victoria Fit Program.</h1>
                         <p>Step by step video workouts for home and gym to get fitter and stronger. </p>
                         <Button className={styles.button}>Click here</Button>
-                    </div>
+                    </div> */}
                 </div>
             </>
         )

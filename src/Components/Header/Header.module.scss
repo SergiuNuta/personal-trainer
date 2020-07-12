@@ -1,59 +1,145 @@
 .header {
-    width: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+
+  .shoppingBag {
     position: absolute;
-    z-index: 10;
-    display: flex;
-    justify-content: space-between;
+    right: 0;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
 
+//   .navBar {
+//     display: flex;
+//     height: 75px;
+//     width: 100%;
+//     position: fixed;
+//     overflow: hidden;
+//     transition: 0.7s;
+//     z-index: 50;
 
-    .Nav {
-        height: 75px;
-        width: 100%;
-        position: fixed;
-        overflow: hidden;
-        transition: 0.7s;
+//     &.floating {
+//       background-color: black;
+//       box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
 
-        &.floating {
-            background-color: white;
-            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+//       a {
+//         color: black;
+//       }
+//     }
+//   }
 
-            a {
-                color: black;
-            }
-        }
+  .menu {
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 5;
+  }
+
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+
+  .bar2 {
+    width: 25px;
+  }
+
+  .Nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+
+    a {
+      padding: 8px;
+      text-decoration: none;
+      font-size: 40px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+      cursor: pointer;
+
+      &:hover,
+      &:focus {
+        color: #f1f1f1;
+      }
     }
+  }
 
-    h1 {
-        // position: relative;
-        padding: 10px;
-        font-size: 2em;
-        // top: 0;
-        // left: 44%;
-        // z-index: 15;
+  .closebtn {
+    z-index: 5;
+    position: absolute;
+    top: 20px;
+    right: 45px;
 
-        a {
-            text-decoration: none;
-            color: white;
-        }
+    span {
+      font-size: 2em;
     }
+  }
 
-    .navList {
-        padding: 10px;
-        right: 2em;
-        top: 10px;
-        position: relative;
-        display: flex;
-        justify-content: flex-end;
+  // .Nav {
+  //     height: 75px;
+  //     width: 100%;
+  //     position: fixed;
+  //     overflow: hidden;
+  //     transition: 0.7s;
 
-        a {
-            cursor: pointer;
-            color: white;
-            margin: 0 10px;
-            text-decoration: none;
+  //     &.floating {
+  //         background-color: black;
+  //         box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
 
-            & :active {
-                border: 1px solid blak;
-            }
-        }
+  //         a {
+  //             color: black;
+  //         }
+  //     }
+  // }
+
+  h1 {
+    padding: 10px;
+    font-size: 2em;
+
+    a {
+      text-decoration: none;
+      color: black;
     }
+  }
+
+  .navList {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  // .navList {
+  //     padding: 10px;
+  //     right: 2em;
+  //     top: 10px;
+  //     // position: relative;
+  //     display: flex;
+  //     justify-content: flex-end;
+
+  //     a {
+  //         cursor: pointer;
+  //         color: black;
+  //         margin: 0 10px;
+  //         text-decoration: none;
+
+  //         & :active {
+  //             border: 1px solid blak;
+  //         }
+  //     }
+  // }
 }

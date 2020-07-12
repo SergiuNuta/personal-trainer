@@ -13,7 +13,8 @@ export default class NavItem extends Component {
                     spy={true}
                     smooth={true}
                     offset={-75}
-                    duration={700}>
+                    duration={700}
+                    onClick={this.props.customClickEvent}>
                     {this.props.name}
                 </Link>
             </>
