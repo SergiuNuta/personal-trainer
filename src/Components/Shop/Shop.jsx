@@ -1,10 +1,10 @@
 import React from "react";
 import styles from "./Shop.module.scss";
-// import Carousel from "react-bootstrap/Carousel";
-import Button from "react-bootstrap/Button";
-import img from "../../data/images/person.jpg";
-import Card from "react-bootstrap/Card";
-import img2 from "../../data/images/scrabble.jpg";
+
+import img1 from "../../data/images/IMG_9210.jpg";
+import img2 from "../../data/images/IMG_9212.jpg";
+
+
 
 export default function Shop({ stripeToken }) {
 
@@ -12,8 +12,22 @@ export default function Shop({ stripeToken }) {
         <>
             <a name="shop" />
             <div className={styles.shopWrapper}>
-                <div className={styles.firstDiv}>first program</div>
-                <div className={styles.secondDiv}>second program</div>
+                <div className={styles.firstProgram}>
+                    <img src={img1} alt="" className={styles.image} />
+                    <h3>Loose fat</h3>
+                    <section className={styles.priceTag}>
+                        <h4>£29.99</h4>
+                        <input type="button" value="add to cart" className={styles.button} />
+                    </section>
+                </div>
+                <div className={styles.secondProgram}>
+                    <img src={img2} alt="" className={styles.image} />
+                    <h3>Build muscles</h3>
+                    <section className={styles.priceTag}>
+                        <h4>£29.99</h4>
+                        <input type="button" value="add to cart" className={styles.button} />
+                    </section>
+                </div>
 
             </div>
         </>
