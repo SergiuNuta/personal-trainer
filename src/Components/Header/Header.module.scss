@@ -2,6 +2,15 @@
   width: 100%;
   position: relative;
   display: flex;
+  // height: 75px;
+  overflow: hidden;
+  transition: 0.7s;
+  z-index: 50;
+
+  & .floating {
+          background-color: black;
+          box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+  }
 
   .shoppingBag {
     position: absolute;
@@ -87,23 +96,6 @@
       font-size: 2em;
     }
   }
-
-  // .Nav {
-  //     height: 75px;
-  //     width: 100%;
-  //     position: fixed;
-  //     overflow: hidden;
-  //     transition: 0.7s;
-
-  //     &.floating {
-  //         background-color: black;
-  //         box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
-
-  //         a {
-  //             color: black;
-  //         }
-  //     }
-  // }
 
   h1 {
     padding: 10px;

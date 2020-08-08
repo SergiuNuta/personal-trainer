@@ -10,9 +10,9 @@ export default class Header extends Component {
 
     handleScroll() {
         if (window.scrollY >= 20) {
-            document.querySelector("nav").classList.add(styles.floating);
+            document.querySelector("h1").classList.add(styles.floating);
         } else {
-            document.querySelector("nav").classList.remove(styles.floating);
+            document.querySelector("h1").classList.remove(styles.floating);
         }
     }
 
