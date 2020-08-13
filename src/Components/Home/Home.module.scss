@@ -8,18 +8,39 @@
 
   .testDiv {
     width: 100%;
-    border: 1px solid black;
-    margin-top: 10px;
+    background-color: snow;
+    // border-top: 1px dotted black;
+    // border-bottom: 1px dotted black;
+    // box-shadow: 0 8px 6px -6px silver;
+    margin: 20px 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    text-align: center;
+    justify-content: space-around;
+    position: relative;
+
+    svg {
+      transition: ease-in-out 0.3s;
+
+      &:hover {
+        transform: scale(1.5);
+      }
+    }
+
+    img {
+      display: none;
+      width: 50px;
+      position: absolute;
+    }
+
+    h3 {
+      z-index: 5;
+      font-size: 1.8em;
+      position: absolute;
+    }
 
     div {
       margin: 10px auto;
-      width: 300px;
-      height: 150px;
-      border: 1px solid red;
+      width: 200px;
     }
   }
 
