@@ -22,12 +22,25 @@
     right: 0;
     padding: 10px 20px;
     cursor: pointer;
+
+    &:hover {
+      transform: scale(1.2);
+      color: rgb(245, 133, 152);
+    }
   }
 
   .menu {
     padding: 10px 20px;
     cursor: pointer;
     z-index: 5;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+
+    div:hover {
+      background-color: pink;
+    }
   }
 
   .bar1,
@@ -86,6 +99,11 @@
   h1 {
     padding: 10px;
     font-size: 2em;
+
+    &:hover {
+      transform: scale(1.2);
+      color: plum;
+    }
 
     a {
       text-decoration: none;
