@@ -10,9 +10,9 @@ export default class Header extends Component {
 
     handleScroll() {
         if (window.scrollY >= 20) {
-            document.querySelector("h1").classList.add(styles.floating);
+            document.querySelector("section").classList.add(styles.floating);
         } else {
-            document.querySelector("h1").classList.remove(styles.floating);
+            document.querySelector("section").classList.remove(styles.floating);
         }
     }
 
@@ -28,6 +28,7 @@ export default class Header extends Component {
     render() {
         return (
             <header className={styles.header}>
+                <section>
                 <div className={styles.menu} onClick={this.openNav}>
                     <div className={styles.bar1}></div>
                     <div className={styles.bar2}></div>
@@ -42,7 +43,7 @@ export default class Header extends Component {
                         <path d="M8 1.5A2.5 2.5 0 0 0 5.5 4h-1a3.5 3.5 0 1 1 7 0h-1A2.5 2.5 0 0 0 8 1.5z" />
                     </svg>
                 </div>
-                
+                </section>
                 <nav className={styles.Nav} id="myNav">
                     <a className={styles.closebtn} onClick={this.closeNav}><span>&times;</span></a>
                     <ul className={styles.navList}>
