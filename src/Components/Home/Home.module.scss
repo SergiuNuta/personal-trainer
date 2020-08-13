@@ -45,7 +45,7 @@
   }
 
   .transition {
-    transition: 0.35s ease-in-out;
+    transition: transform 2s ease, opacity .5s ease-out;
   }
 
   .carousel {

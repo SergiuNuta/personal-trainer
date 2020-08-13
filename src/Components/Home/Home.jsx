@@ -12,8 +12,15 @@ export default class Home extends Component {
             <>
                 <div className={styles.wrapper}>
                     <div className={styles.firstDiv}>
-                        <Carousel interval={3000} className={`${styles.carousel} ${styles.fade}`} controls={false}>
-                            <Carousel.Item>
+                        <Carousel
+                            interval={3000}
+                            className={`${styles.carousel} ${styles.fade}`}
+                            fade={true}
+                            pause={"hover"}
+                            slide={true}
+                            touch={true}
+                            controls={false}>
+                            <Carousel.Item className={styles.transition}>
                                 <img
                                     className="d-block w-100"
                                     src={img}
@@ -24,7 +31,7 @@ export default class Home extends Component {
                                     <h3>Gym guide</h3>
                                 </Carousel.Caption>
                             </Carousel.Item>
-                            <Carousel.Item>
+                            <Carousel.Item className={styles.transition}>
                                 <img
                                     className="d-block w-100"
                                     src={img}
@@ -32,11 +39,11 @@ export default class Home extends Component {
                                     fluid
                                 />
 
-                                <Carousel.Caption>
+                                <Carousel.Caption className={styles.transition}>
                                     <h3>Home guide</h3>
                                 </Carousel.Caption>
                             </Carousel.Item>
-                            <Carousel.Item>
+                            <Carousel.Item className={styles.transition}>
                                 <img
                                     className="d-block w-100"
                                     src={img}
@@ -44,7 +51,7 @@ export default class Home extends Component {
                                     fluid
                                 />
 
-                                <Carousel.Caption>
+                                <Carousel.Caption className={styles.transition}>
                                     {/* <h3>Third slide label</h3> */}
                                 </Carousel.Caption>
                             </Carousel.Item>
@@ -65,7 +72,7 @@ export default class Home extends Component {
                                     fill="#7ED1FF"
                                 />
                             </svg>
-                            <img src={fitness} alt=""/>
+                            <img src={fitness} alt="" />
                         </div>
                         <div>
                             <h3>SLEEP</h3>
@@ -81,7 +88,7 @@ export default class Home extends Component {
                                     fill="#F5DC56"
                                 />
                             </svg>
-                            <img src={scale} alt=""/>
+                            <img src={scale} alt="" />
                         </div>
                         <div>
                             <h3>TRAIN</h3>
@@ -97,7 +104,7 @@ export default class Home extends Component {
                                     fill="#FC9D5D"
                                 />
                             </svg>
-                            <img src={calm} alt=""/>
+                            <img src={calm} alt="" />
                         </div>
                     </div>
                     {/* <div className={styles.secondDiv}>
